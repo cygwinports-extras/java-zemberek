@@ -1,0 +1,8 @@
+inherit ant
+
+
+HOMEPAGE="http://code.google.com/p/zemberek/"
+SRC_URI="http://zemberek.googlecode.com/files/${P#java-}-src.zip"
+SRC_DIR="${P#java-}-src"
+
+ANT_BUILD_TARGETS="dist javadocs"
