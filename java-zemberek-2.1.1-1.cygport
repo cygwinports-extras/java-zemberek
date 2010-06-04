@@ -1,8 +1,11 @@
+JAVA_CLASSPATH="xercesImpl.jar:xml-apis.jar"
 inherit ant
 
-
+DESCRIPTION="Natural Language Processing library for Turkic languages"
 HOMEPAGE="http://code.google.com/p/zemberek/"
 SRC_URI="http://zemberek.googlecode.com/files/${P#java-}-src.zip"
 SRC_DIR="${P#java-}-src"
 
-ANT_BUILD_TARGETS="dist javadocs"
+ANT_BUILD_TARGETS="jar-cekirdek jar-demo jar-tk jar-tr javadocs"
+ANT_INSTALL_JARS="dagitim/jar/*.jar"
+ANT_INSTALL_JAVADOC="build/java-docs/api"
